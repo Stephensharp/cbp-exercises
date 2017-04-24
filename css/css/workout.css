@@ -1,0 +1,12 @@
+body {
+        font-family: 'aerial', sans-serif;
+}
+
+ul {
+    font-weight: bold;
+}
+
+.subtext {
+    color: #cccccc;
+    font-size: 12px;
+}
