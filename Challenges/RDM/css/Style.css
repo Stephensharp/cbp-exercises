@@ -2,7 +2,6 @@
 #header {
     height: 215px;
     width: 69%;
-
     background-image: url(../images/header1.jpg);
     background-repeat: no-repeat;
     font-family: 'Raleway', sans-serif;
@@ -102,7 +101,8 @@ font-family: 'Monoton', cursive;
     background-color: black;
     background-size: 22%;
     max-width: 22%;
-    border: 1px solid green;
+    min-height: 46em;
+    border: 5px solid black;
     float: left;
     margin: 5px;
    }
@@ -111,24 +111,30 @@ font-family: 'Monoton', cursive;
     background-color: black;
     background-size: 22%;
     max-width: 22%;
-    border: 1px solid red;
+    min-height: 46em;
+    border: 5px solid black;
     margin: 5px;
     float: left;
+    box-shadow: border-box; /*fits all elements to parent*/
    }
 #actors {
     font-family: 'Raleway', sans-serif;
     background-color: black;
     background-size: 22%;
     max-width: 22%;
-    border: 1px solid yellow;
+    min-height: 46em;
+    border: 5px solid black;
     margin: 5px;
     float: left;
    }
 #footer {
-    width: 310px;
-    height: 100px;
-    border: 1px solid blue;
+    width: 69%;
+    max-width: 69%;
+    height: 200px;
+    background-color: black;
+    border: 5px solid black;
     margin: 5px;
+    padding: 5px;
     clear: both;
 }
 
