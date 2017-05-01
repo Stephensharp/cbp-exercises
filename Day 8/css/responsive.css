@@ -1,0 +1,29 @@
+@-ms-viewport { 
+    width: device-width; 
+}
+
+body{
+    background-color:
+    black;
+}
+@media only screen and (min-width: 400px) {
+    body{
+    background-color: red}
+    /* CSS code that only applies to screens and to window sizes wider or equal to 800px */
+}
+
+@media only screen and (min-width: 800px) {
+    body{
+    background-color: rebeccapurple}
+    /* CSS code that only applies to screens and to window sizes wider or equal to 800px */
+}
+main{
+    max-width: 730px;
+    padding: 2em;
+    background-color: white;
+    min-width: 300px;
+}
+ .img{
+     max-width: 100%;
+     height: auto;
+ }

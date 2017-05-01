@@ -1,0 +1,352 @@
+/*font-family: 'Alegreya', serif;
+font-family: 'Open Sans', sans-serif;*/
+
+body{
+    width: 77%;
+    margin: 0 auto;
+}
+.container {
+    display: block;
+    background-color: rgba(0, 0, 0, 0);
+    min-height: 70px;
+    border: 0px solid #c7c7c7;
+    align-self: flex-end;
+}
+.item {
+    box-sizing: border-box;
+    border: 0px solid #173493;
+    padding: 0em;
+    display: flex;
+    justify-content: space-around;
+}
+.item span {
+    height: 1em;
+    line-height: 1.2em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    margin: 0em;
+    width: fit-content;
+    height:3em;
+}
+.id {
+    font-family: Courier New, Courier, monospace;
+    color: silver;
+}
+
+
+
+#sect0 .container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+    color: #173493;
+    height: 50px;
+    text-justify: left;
+}
+#sect0 .item1 {
+    align-self: center;
+    flex-grow: 15;
+    position: left;
+}
+#sect0 .item2 {
+    align-self: center;
+    flex-grow: 3;
+}
+#sect0 .item3 {
+    align-self: center;
+    flex-grow: 3;
+}
+#sect0 .item4 {
+    align-self: center;
+    flex-grow: 3;
+}
+#sect1 .container{
+    background-image: url(../img/enchant-your-guests.jpg);
+    background-size: cover;
+    height: 355px;
+    color: white;
+}
+#sect1 .item1 {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px black, 0 0 35px black, 0 0 40px black, 0 0 50px black, 0 0 75px black;
+    height: 2em;
+    font-family: 'Alegreya', serif;
+    font-size: 3em;
+    padding: 1.0em;
+}
+#sect1 .item2 {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px black, 0 0 35px black, 0 0 40px black, 0 0 50px black, 0 0 75px black;
+    height: 1.5em;
+    font-family: 'Alegreya', serif;
+    font-size: 2em;
+    padding: 1.5em;
+}
+#sect1 .item3 {
+    height: 3em;
+    font-family: 'Alegreya', serif;
+    font-size: 1.5em;
+    margin: 2em 0em 0em 0em;
+    padding: 1em;
+}
+/* #justify-content-space-between */
+#sect2 .container {
+    display: flex;
+    padding: 0em;
+    border: 0em;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #173493;
+    min-height: 120px;
+    border: 0px solid #c7c7c7;
+    font-size: 0.9em;
+}
+#sect2 .item1 {
+    width:15em; 
+    height: 0em;
+    font-family: 'Open Sans', sans-serif;
+    margin:0em 1em 0em 1em;
+}
+#sect2 .item2 {
+    width:15em; 
+    height: 0em;
+    font-family: 'Open Sans', sans-serif;
+    margin:0em 1em 0em 1em;
+}
+#sect2 .item3 {
+    width:15em; 
+    height: 0em;
+    font-family: 'Open Sans', sans-serif;
+    margin:0em 1em 0em 1em;
+}
+#sect3 .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 0);
+    justify-content: center;
+    align-self: flex-end;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    text-align: left;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#sect3 .item1 {
+    margin: 5px 5px 5px 5px;
+    min-height:290px;
+    width: 330px;
+    background-size: 110%;
+    background-image: url(../img/romance.jpg);
+}
+#sect3 .item1a {
+    flex: column;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0.5); 
+    height: 1.5em;
+    width: 100%;
+    justify-content: center;
+    font-size: 2em; 
+}
+#sect3 .item2 {
+    margin: 5px 5px 5px 5px;
+    min-height:290px;
+    width: 330px;
+    background-size: 110%;
+    background-image: url(../img/visitors.jpg);
+}
+#sect3 .item2a {
+    flex: column;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0.5); 
+    height: 1.5em;
+    width: 100%;
+    justify-content: center;
+    font-size: 2em; 
+}
+#sect3 .item3 {
+    margin: 5px 5px 5px 5px;
+    min-height:290px;
+    width: 330px;
+    background-size: 110%;
+    background-image: url(../img/picnic.jpg);
+}
+#sect3 .item3a {
+    flex: column;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0.5); 
+    height: 1.5em;
+    width: 100%;
+    justify-content: center;
+    font-size: 2em; 
+}
+#sect3 .item4 {
+    margin: 5px 5px 5px 5px;
+    min-height:290px;
+    width: 330px;
+    background-size: 110%;
+    background-image: url(../img/grill.jpg);
+}
+#sect3 .item4a {
+    flex: column;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0.5); 
+    height: 1.5em;
+    width: 100%;
+    justify-content: center;
+    font-size: 2em; 
+}
+#sect3 .item5 {
+    margin: 5px 5px 5px 5px;
+    min-height:290px;
+    width: 330px;
+    background-size: 110%;
+    background-image: url(../img/celebration.jpg);
+}
+#sect3 .item5a {
+    flex: column;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0.5); 
+    height: 1.5em;
+    width: 100%;
+    justify-content: center;
+    font-size: 2em; 
+}
+#sect3 .item6 {
+    margin: 5px 5px 5px 5px;
+    min-height:290px;
+    width: 330px;
+    background-size: 110%;
+    background-image: url(../img/kids.jpg);
+}
+#sect3 .item6a {
+    flex: column;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0.5); 
+    height: 1.5em;
+    width: 100%;
+    justify-content: center;
+    font-size: 2em; 
+}
+/*#sect4 .container {
+    height:290px;
+    margin: 5px 72px 40px 72px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+    justify-content: center;
+    align-self: flex-end;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    text-align: left;
+    color: white;
+}
+#sect4 .item1 {
+    margin: 0px 5px 0px 0px;
+    height:290px;
+    width: 330px;
+    background-size: 110%;
+    background-image: url(../img/grill.jpg);
+}
+#sect4 .item2 {
+    margin: 0px 5px 0px 5px;
+    height:290px;
+    width: 330px;
+    background-size: 110%;
+    background-image: url(../img/celebration.jpg);
+}
+#sect4 .item3 {
+    margin: 0px 0px 0px 5px;
+    height:290px;
+    width: 330px;
+    background-size: 110%;
+    background-image: url(../img/kids.jpg);
+}*/
+#sect5 .container {
+    font-family: 'Alegreya', serif;
+    font-size: 3em;
+    display: flex;
+    min-height: 120px;
+    background-color: #173493;
+    justify-content: left;
+    color: white;
+}
+#sect5 .item1 {
+    padding: 20px;
+}
+#sect6 .container {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    font-size: 1.1em;
+    min-height: 250px;
+    background-color: #173493;
+    justify-content: left;
+    color: white;
+    flex-direction: row;
+}
+#sect6 .item1 {
+    align-self: start;
+    margin:1em;
+    flex-direction: column;
+        flex-wrap: wrap;
+}
+#sect6 .item2 {
+    align-self: start;
+    margin:1em;
+    flex-direction: column;
+        flex-wrap: wrap;
+}
+#sect6 .item3 {
+    align-self: start;
+    margin:1em;
+    flex-direction: column;
+        flex-wrap: wrap;
+}
+
+.button {
+  background: #3F7005;
+  background-image: -webkit-linear-gradient(top, #3F7005, #6fbd0a);
+  background-image: -moz-linear-gradient(top, #3F7005, #6fbd0a);
+  background-image: -ms-linear-gradient(top, #3F7005, #6fbd0a);
+  background-image: -o-linear-gradient(top, #3F7005, #6fbd0a);
+  background-image: linear-gradient(to bottom, #3F7005, #6fbd0a);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 10px;
+  font-family:  'Alegreya', serif;
+  color: #ffffff;
+  font-size: 0.8em;
+  padding: 0.5em;
+  text-decoration: none;
+  height:2em;
+}
+
+.button:hover {
+  background: #72bd11;
+  background-image: -webkit-linear-gradient(top, #72bd11, #95e336);
+  background-image: -moz-linear-gradient(top, #72bd11, #95e336);
+  background-image: -ms-linear-gradient(top, #72bd11, #95e336);
+  background-image: -o-linear-gradient(top, #72bd11, #95e336);
+  background-image: linear-gradient(to bottom, #72bd11, #95e336);
+  text-decoration: none;
+}
+
+    /*@media screen and (max-width: 320px) {
+    body {
+        font-size: 12px;
+    }
+}    @media screen and (min-width: 320px) {
+    body {
+        font-size: 14px;
+    }
+}    @media screen and (min-width: 480px) {
+    body {
+        font-size: 20px;
+    }
+}    @media screen and (min-width: 800px) {
+    body {
+        font-size: 24px;
+    }
+}    @media screen and (min-width: 1280px) {
+    body {
+        font-size: 32px;
+    }
+}*/
