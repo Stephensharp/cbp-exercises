@@ -1,0 +1,205 @@
+/*-----------------------------Signature Start-----------------------------------*/
+
+path {
+  fill: none;
+  stroke: white;
+  stroke-width: 5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  /*background-color: rgba(0, 0, 0, 0);
+  stroke-opacity:1;*/
+}
+
+.stroke-step {
+  stroke-dasharray: 474;
+  -webkit-animation: write1 2.0s 1 ease-out;
+          animation: write1 2s 1 ease-out;
+}
+
+.stroke-hen {
+  stroke-dasharray: 310;
+  -webkit-animation: write2 2.1s 1 ease-in-out;
+          animation: write2 2.1s 1 ease-in-out;
+}
+
+.stroke-sh {
+  stroke-dasharray: 400;
+  -webkit-animation: write3 2.4s 1 ease-in;
+          animation: write3 2.4s 1 ease-in;
+}
+
+.stroke-arp {
+  stroke-dasharray: 285;
+  -webkit-animation: write4 2.7s 1 ease-in;
+          animation: write4 2.7s 1 ease-in;
+}
+
+.stroke-underline {
+  stroke-dasharray: 315;
+  -webkit-animation: write5 2.9s 1 ease-in;
+          animation: write5 2.9s 1 ease-in;
+}
+
+.stroke-t {
+  stroke-dasharray: 33;
+  -webkit-animation: write6 3.1s 1 ease-in;
+          animation: write6 3.1s 1 ease-in;
+}
+
+.stroke-bbo {
+  stroke: darkgray;
+  stroke-dasharray: 1190;
+  animation-delay: 3.5s;
+      -webkit-animation-delay:  3.5s;
+  -webkit-animation: write7 1.5s 1 ease-in;
+          animation: write7 1.5s 1 ease-in;
+}
+
+.stroke-bbi {
+  stroke: darkgray;
+  stroke-dasharray: 1120;
+    animation-delay: 4.5s;
+    -webkit-animation-delay:  4.5s;
+  -webkit-animation: write8 2.0s 1 ease-in;
+          animation: write8 2.0s 1 ease-in;
+}
+  /*keyframes */
+@-webkit-keyframes write1 {
+    0% {
+        stroke-dashoffset: 474;
+    }
+    35% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes write1 {
+    0% {
+        stroke-dashoffset: 474;
+    }
+    35% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes write2 {
+    0%, 36%  {
+        stroke-dashoffset: 310;
+    }
+    55% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes write2 {
+    0%, 36%  {
+        stroke-dashoffset: 310;
+    }
+    55% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes write3 {
+    0%, 56% {
+        stroke-dashoffset: 400;
+    }
+    69% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes write3 {
+    0%, 56% {
+        stroke-dashoffset: 400;
+    }
+    69% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes write4 {
+    0%, 70% {
+        stroke-dashoffset: 285;
+    }
+    89% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes write4 {
+    0%, 70% {
+        stroke-dashoffset: 285;
+    }
+    89% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes write5 {
+    0%, 90% {
+        stroke-dashoffset: 315;
+    }
+    96% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes write5 {
+    0%, 90% {
+        stroke-dashoffset: 315;
+    }
+    96% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes write6 {
+    0%, 98% {
+        stroke-dashoffset: 33;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+@-webkit-keyframes write6 {
+    0%, 98% {
+        stroke-dashoffset: 33;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes write7 {
+    0%, 25% {
+        stroke-dashoffset: 1190;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+@-webkit-keyframes write7 {
+    0%, 25% {
+        stroke-dashoffset: 1190;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes write8 {
+    0%, 50% {
+        stroke-dashoffset: 1120;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+@-webkit-keyframes write8 {
+    0%, 50% {
+        stroke-dashoffset: 1120;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+/*-----------------------------Signature End-----------------------------------*/
