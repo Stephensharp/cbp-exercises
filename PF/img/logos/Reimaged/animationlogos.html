@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSSANIMATION</title>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <link rel="stylesheet" href="css/animationlogos.css">
+</head>
+
+<body>
+
+    <section id="justify-content-space-between">
+        <h2>justify-content: space-between</h2>
+        <span class="id">#justify-content-space-between</span>
+        <div class="container">
+            <div class="item item1">
+                <div id="object" class="slideUp">
+                    <a href="pfindex.html" title="Return to the homepage" class="logo">
+                    <img src="apache-card.png" alt="ssdev logo" />
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $(window).scroll(function () {
+            $("div").each(function () {
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow + 400) {
+                    $(this).addClass("slideUp");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

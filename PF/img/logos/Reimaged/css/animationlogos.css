@@ -1,0 +1,42 @@
+.container {
+    display: block;
+    background-color: rgba(0, 0, 0, 0);
+    min-height: 100px;
+    border: 3px solid #c7c7c7;
+}
+.item {
+    box-sizing: border-box;
+    border: 3px solid orange;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    margin: auto;
+    width: 2em;
+}
+.id {
+    font-family: Courier New, Courier, monospace;
+    color: silver;
+}
+
+/* #justify-content-space-between */
+#justify-content-space-between .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* #justify-content-space-around */
+#justify-content-space-around .container {
+    display: flex;
+             justify-content: space-around;
+}
+#object{
+	background-color: #fe5652;
+
+	/*visibility: hidden;*/
+}
