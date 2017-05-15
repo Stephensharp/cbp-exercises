@@ -9,11 +9,11 @@ if (empty($_POST)) {
 }
 $errors = array();
 
-if (empty($_POST['name'])) {
-    $errors[] = 'empty name';
+if (empty($_POST['title'])) {
+    $errors[] = 'empty title';
 }
-if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-    $errors[] = 'not a valid email';
+if (empty($_POST['date'])) {
+    $errors[] = 'empty date';
 }
 if (empty($errors)) {
     $foo = $_POST['name'];
@@ -27,9 +27,9 @@ else {
         echo '<p>' . htmlspecialchars($error) . '</p>';
     }
 }
-if (ctype_digit($_POST['budget'])) {
-    $errors[] = 'not a number';
-}
+// if (ctype_digit($_POST['budget'])) {
+//     $errors[] = 'not a number';
+// }
 // isset does not check if its empty whereas empty does as per above
 // var_dump($_POST);
 

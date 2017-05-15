@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+<script src="jquery-3.2.1.js"></script>
+
+    <button onclick="alert('clicked')">Click Me!</button>
+    <div id="content">Content</div>
+    <h1>header</h1>
+    <p>first content</p>
+    <script>
+
+        var cars = ['vw','bmw','audi','fiat'];
+
+
+
+        $("h1").replaceWith("Name of Car");
+        $('#content p').remove();
+
+        for (var i = 0; i < cars.length; i++){
+            $('#content').append('<p>' + cars[i] + '</p>')
+        }
+
+        // var $content = $('#content p');
+        // $content.css('color','green');
+        // $content.css('font-size','40px');   same as below but not as good
+
+        // $('#content p').css('color','green').css('font-size','40px'); same as below but not as good
+
+        $('#content p').css({     //best option
+            'color': 'green',
+            'font-size': '40px'
+        });
+
+
+        $('button').click(function(){   //defining function inside jquery script
+                $('#content').html('hello world').css('color','#0f0');
+
+        });
+
+
+        var $content = $('#content');
+        $('button').click(function(){
+
+            if(content.hasClass('faded')){
+                $content.removeClass('faded').fadeIn(2000, function(){
+                    alert('faded in');
+                });
+            }else{
+                $content.addClass('faded').fadeOut(2000);
+            }        
+        })
+
+
+
+
+
+        // var button = document.getElementsByTagName('button');
+        // button = button[0];
+
+        // button.onclick = buttonClicked;
+
+        // function buttonClicked() {
+        //     alert('clicked');
+        //     content.innerHTML = "hello world!";
+        //     content.style.color = "#00f";
+        // };
+
+        // var content = document.getElementById('content');
+        // console.log(content.innerHTML);
+        // content.innerHTML = "hello world!";
+        // content.style.color = "00f";
+        // console.log(content.innerHTML);
+
+        // console.log(button, content);
+
+
+//other popular events - onchange, onclick, onmouseover, onmouseout, onkeydown, onload
+
+
+
+    </script>
+</body>
+
+</html>

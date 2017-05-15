@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+<script src="jquery-3.2.1.js"></script>
+
+    <button onclick="alert('clicked')">Click Me!</button>
+    <div id="content">First Content</div>
+    <script>
+        var button = document.getElementsByTagName('button');
+        button = button[0];
+
+        button.onclick = buttonClicked;
+
+        function buttonClicked() {
+            alert('clicked');
+            content.innerHTML = "hello world!";
+            content.style.color = "#00f";
+        };
+
+        var content = document.getElementById('content');
+        // console.log(content.innerHTML);
+        // content.innerHTML = "hello world!";
+        // content.style.color = "00f";
+        // console.log(content.innerHTML);
+
+        // console.log(button, content);
+
+
+//other popular events - onchange, onclick, onmouseover, onmouseout, onkeydown, onload
+
+
+
+    </script>
+</body>
+
+</html>
