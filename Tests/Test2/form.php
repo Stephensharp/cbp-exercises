@@ -18,8 +18,6 @@
 $pdo = new PDO('mysql:host=localhost;dbname=siteinduction;charset=utf8', 'root', 'rootroot');
 var_dump($pdo);
 
-$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
 if ($_POST) {
     $stmt = $pdo->prepare('INSERT INTO sitestaff (name, age, dob, gender, email, company, trade, inducted, inductiondate, comment, created) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NOW())');
     $stmt->execute(array($_POST['name'], $_POST['age'], $_POST['dob'], $_POST['gender'], $_POST['email'], $_POST['company'], $_POST['trade'], $_POST['inducted'], $_POST['inductiondate'], $_POST['comment']));

@@ -15,10 +15,53 @@
 // define('DATA_DIR', realpath(dirname(__FILE__).'/../data')); 
 
 // $_data_index = null;
+
+
+$host    = "localhost";
+$user    = "username_here";
+$pass    = "password_here";
+$db_name = "database_name_here";
+
+//create connection
 $pdo = new PDO('mysql:host=localhost;dbname=siteinduction;charset=utf8', 'root', 'rootroot');
+// var_dump($pdo);
+
+//test if connection failed
+if(mysqli_connect_errno()){
+    die("connection failed: "
+        . mysqli_connect_error()
+        . " (" . mysqli_connect_errno()
+        . ")");
+}
+
+//get results from database
+$result = PDO_query($connection,"SELECT * FROM sitestaff");
+$all_property = array();  //declare an array for saving property
+
+//showing property
+echo '<table class="data-table">
+        <tr class="data-heading">';  //initialize table tag
+while ($property = PDO_fetch_field($result)) {
+    echo '<td>' . $property->name . '</td>';  //get field name for header
+    array_push($all_property, $property->name);  //save those to array
+}
+echo '</tr>'; //end tr tag
+
+//showing all data
+while ($row = PDO_fetch_array($result)) {
+    echo "<tr>";
+    foreach ($all_property as $item) {
+        echo '<td>' . $row[$item] . '</td>'; //get items using property value
+    }
+    echo '</tr>';
+}
+echo "</table>";
+?>
+
+<!--$pdo = new PDO('mysql:host=localhost;dbname=siteinduction;charset=utf8', 'root', 'rootroot');
 var_dump($pdo);
 
-$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //this checks whats wrong with the mysql dump
 
 if ($_POST) {
     $stmt = $pdo->prepare('INSERT INTO sitestaff (name, age, dob, gender, email, company, trade, inducted, inductiondate, comment, created) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NOW())');
@@ -29,10 +72,12 @@ if ($_POST) {
     var_dump($_POST);
 }
 }
-
-
 ?>
-<div class="form-style-5">
+-->
+
+
+
+<!--<div class="form-style-5">
 
 <h2>SITE PERSONNEL REGISTRATION</h2>
 <form action="" method="post">  
@@ -49,8 +94,6 @@ if ($_POST) {
     <label for"gender">Gender:</label>
     <input type="radio" name="gender"  value="female">Female
     <input type="radio" name="gender"  value="male">Male
-    <!--<input type="radio" name="contact" value="choose"> <label for"todo">Male</label>
-    <input type="radio" name="contact" value="choose">  <label for"choose">Female</label>-->
     <br>
     <br>
     E-mail: <input type="text" name="email" value="">
@@ -98,7 +141,7 @@ if ($_POST) {
     <br>
     <input type="submit" value="submit">
 </form>
-</div>
+</div>-->
 
 
 

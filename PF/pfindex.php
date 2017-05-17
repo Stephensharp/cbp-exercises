@@ -312,7 +312,7 @@ Creating things is what I love. Taking someones idea and turning it into a reali
 
   <div class="bgimg-3">
     <div class="caption">
-      <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LETS CREATE SOMETHING AWESOME</span>
+      <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">CREATE</span>
     </div>
   </div>
 
