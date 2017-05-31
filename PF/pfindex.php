@@ -13,12 +13,16 @@
   <link rel="stylesheet" href="css/form.css">
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <link rel="stylesheet" href="css/logos.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
   <link rel="icon" href="img/logo.png" type="png" sizes="16x16">
+  <script src="js/script.js"></script>
 </head>
 
 
 <body cz-shortcut-listen="true">
+
+<?php require_once 'lib/data-functions.php'; ?>
+
 
   <nav class="navBar">
     <nav class="wrapper">
@@ -31,9 +35,9 @@
       <label for="menu-toggle" class="label-toggle"></label>
       </input>
       <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </nav>
@@ -43,7 +47,7 @@
     <div class="signature">
       <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
         xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" id="svg10959" version="1.1" viewBox="0 0 300 500"
-        height="30em" width="26em">
+        height="30em" width="24.3em">
         <g id="step">
           <path class="stroke-step" d="m 75.576329,154.20779 -4.602927,-3.20177 c -9.394576,-4.81776 -34.593488,9.0412 -45.281801,14.74512 -9.338868,5.28012 -19.0186564,14.22846 -16.7428504,19.88214 6.8948794,13.01569 23.7492104,16.6816 33.4793504,25.99992 5.994734,9.79578 -14.78102,14.99375 -19.619527,15.2696 -4.852749,0.0337 -9.028016,-1.25489 -12.175317,-4.03602 -6.3513974,-6.94904 -2.5072714,-15.22338 0.448445,-19.84375 8.271123,-12.5836 17.200895,-18.71867 31.067359,-25.34895 10.666227,-5.05705 11.217241,5.4295 8.688525,10.62283 -7.295023,12.82328 -15.505999,20.86656 -14.889535,30.82534 4.558972,14.01458 22.280459,8.8317 28.140009,0.58298 4.464357,-7.03584 0.677656,-15.3537 -6.912877,-13.54408 -10.990707,3.33593 -6.883485,16.68848 -1.540338,22.24394 4.166997,5.51659 9.698254,6.81447 5.381357,13.04979 -3.282452,3.77888 -3.935026,-0.72346 -3.083126,-3.0247 v 0 c 3.173299,-11.20579 28.683312,-42.24622 26.165916,-44.60349 -4.424841,-1.67259 -12.203478,18.45107 -14.14031,26.46556">
         </g>
@@ -74,7 +78,7 @@
   </div>
 
   <div class="cont1">
-    <h3>ABOUT</h3>
+     <h3 id="about">About</h3>
     <div class="container">
       <div class="item item1">
         <p>
@@ -83,7 +87,7 @@ Creating things is what I love. Taking someones idea and turning it into a reali
   </p>
       </div>
       <div class="item item2">
-        <img src="img/pde.jpg" alt="stephen sharp photo" width="100%" position="middle" />
+        <img src="img/pde.jpg" alt="stephen sharp photo" width="" position="" />
       </div>
     </div>
   </div>
@@ -300,7 +304,7 @@ Creating things is what I love. Taking someones idea and turning it into a reali
   </div>
 
   <div class="cont2">
-    <h3>PROJECTS</h3>
+    <h3 id="projects">Projects</h3>
     <p>To be completed as projects progress.</p>
     <br>
     <br>
@@ -317,7 +321,7 @@ Creating things is what I love. Taking someones idea and turning it into a reali
   </div>
 
   <div class="cont3">
-    <h3>GET IN TOUCH</h3>
+    <h3 id="contact">Contact</h3>
     <div class="container">
       <div class="item item1">
 <?php
@@ -329,21 +333,18 @@ if (isset($_GET['status']) && $_GET['status'] == '')
           <form action="submit.php" method="post">
             <label for "name">Name:</label> <input type="text" name="name" value="">
             <br>
-            <label for "Phone Number">Contact Number:</label> <input type="text" name="Phone Number" value="">
+            <label for "phone_number">Contact Number:</label> <input type="number" name="phone_number" value="">
             <br>
             <label for "email">Email:</label> <input type="email" name="email" value="">
             <br>
-            <label for "updates">Would you like email updates of our services?</label>
-            <input type="checkbox" name="updates" checked="checked" value="yes">
-            <br>
-            <label for "radio">How should we contact you?</label>
-            <input type="radio" name="contact" value="email"> <label for "contact-email">Email</label>
-            <input type="radio" name="contact" value="phone"> <label for "contact-phone">Phone</label>
+            <label for "contact">How should I contact you?</label>
+            <input type="radio" name="contact" value="email"> <label for "contact_email">Email</label>
+            <input type="radio" name="contact" value="phone"> <label for "contact_phone">Phone</label>
             <br>
 
       </div>
       <div class="item item2">
-        <label for "note">Project Outline:</label><textarea type="textarea" name="note" rows="10" cols="50"></textarea>
+        <label for "note">Comments:</label><textarea type="textarea" name="note" rows="10" cols="50"></textarea>
         <br>
         <input type="submit" value="submit">
         </form>
@@ -374,3 +375,18 @@ if (isset($_GET['status']) && $_GET['status'] == '')
 </body>
 
 </html>
+
+<!--$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});-->

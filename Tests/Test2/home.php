@@ -8,24 +8,101 @@
 <?php
 
 
-define("CURRENCY", "EURO");
-
-function print_price($value, $currency)
+function print_price($value, $currency = 'EURO')
 {
+    if($currency == 'USD')
+    {
+        return $value . ' ' . $currency;
+    }
+    elseif($currency == 'EURO')
+    {
+        return  $value . ' ' . $currency;
+    }
+    else
+    {
+        return $value . ' ' . $currency;
+        // return $weight * 0.45359237; // also possible
+    }
+
     switch($currency)
     {
-        case 'USD':
-            return $value * 0.9;
+        case 'USD': 
+            return $currency;
             break;
-        case 'CZK':
-            return $value * 0.038;
-            break; 
+        case 'EURO': 
+            return $currency;
+            break;
+        case 'CZK': 
+            return $currency;
+            break;    
+        default:
+            die('Unknown unit!');
+            break;
     }
 }
 
+echo print_price(123);
 
-echo '<br>'.print_price(10, "USD"); // returns 3.937007874015748 (approximately)
-echo '<br>'.print_price(10, "CZK"); // returns 25.4
+
+
+
+
+
+
+
+
+
+
+
+
+
+// define("CURRENCY", "EURO");
+
+// function printPrice($price = NULL)
+// {
+
+//     switch($currency)
+//     {
+//         case 'CURRENCY':
+//             return $currency . 'USD';
+//             break;
+//         case 'CURRENCY':
+//             return $currency . 'EURO';
+//             break;
+//         case 'CURRENCY':
+//             return $currency . 'CZK';
+//             break;
+//     }
+//     print ($price);
+// }
+
+// printPrice(10)
+
+
+
+
+
+
+
+
+
+
+// function print_price($price)
+// {
+//     switch($currency)
+//     {
+//         case 'USD':
+//             return $value * 0.9;
+//             break;
+//         case 'CZK':
+//             return $value * 0.038;
+//             break; 
+//     }
+// }
+
+
+// echo '<br>'.print_price(10, "USD"); // returns 3.937007874015748 (approximately)
+// echo '<br>'.print_price(10, "CZK"); // returns 25.4
 
 // function exchangeRate( $amount, $from, $to)
 // {

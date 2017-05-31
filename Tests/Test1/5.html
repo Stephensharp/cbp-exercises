@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+
+    div {
+  border: 1px solid #000000;
+  padding: 1em;
+  margin: 1em;
+}
+.top {
+    display: flex;
+    justify-content: left;
+}
+.top .item1 {
+    align-self: flex-start;
+}
+.container{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.container .left {
+    order: 1;
+    width: 20%;
+    min-height: 10em;
+}
+.container .main {
+    order: 2;
+    width: 60%;
+    min-height: 10em;
+}
+.container .right {
+    order: 3;
+    width: 20%;
+    min-height: 10em;
+}
+</style>
+<body>
+    <div class="top">
+    TOP
+  </div>
+  <div class="container">
+    <div class="main">
+      <h1>MAIN</h1>
+      Lorem ipsum dolor sit amet, no eos atqui debet, mei in quot disputationi. Ei eam ubique consetetur. Quis pertinax per ex, cu vix ferri mutat utamur. Eos te conceptam comprehensam, usu ad nominavi placerat. No sit augue minim salutatus, qui no laudem partiendo.
+    </div>
+    <div class="left">
+      LEFT MENU
+    </div>
+    <div class="right">
+      RIGHT COLUMN
+    </div>
+  </div>
+</body>
+</html>
