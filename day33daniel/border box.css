@@ -1,0 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*also check out display:inline, inline-block, inline-flex, block, flex  ------  all properties of diplay*/
+
+/*check out float and clearfix check daniels css day 33 page for images or objects and floating text around them*/
+
+/*position relative fixed and absolute - check uses*/
