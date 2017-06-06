@@ -17,7 +17,7 @@
 <script>
 
 var date_now = new Date();
-var date_countdown = new Date(2017,5,3);
+var date_countdown = new Date(1980,3,22);
 
 var diff = date_countdown.getTime() - date_now.getTime();
 
