@@ -40,10 +40,13 @@ class address
         $this->local_country = $local_country;
         return (static::$local_country);
     }
-    public static function __construct($array)
-    {
-        $this->array = $array;
-}
+    public function __construct($array)
+    {// if should be set for the above properties
+        if(isset($param['street']))
+        {
+            $this->street = $param['street'];
+    }
+    }
 
 
 ?>
@@ -84,3 +87,4 @@ constructor:-->
     'country' => 'cz',
     'postal_code' => '27204'
 ];
+

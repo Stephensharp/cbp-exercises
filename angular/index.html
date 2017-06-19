@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="https://code.angularjs.org/latest/angular.min.js"></script>
+    <script src="https://code.angularjs.org/latest/angular-route.min.js"></script>
+    <script src="myApp.module.js"></script>
+
+</head>
+<body>
+
+<div ng-app="" >
+The result is {{ 3 + 3 }}
+</div>
+
+<div ng-init="name='John'; color='darkred'">
+    <div class="{{ class }}" style="background-color: {{ color }}">        
+        The color of this element is {{ color }}, it's class is {{ class }}
+    </div>
+</div>
+    
+</body>
+</html>
